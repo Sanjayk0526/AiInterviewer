@@ -1,0 +1,224 @@
+/* ================================
+   GLOBAL RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* ================================
+   COLOR VARIABLES
+================================ */
+:root {
+  --primary: #0f172a;      /* Deep Navy */
+  --secondary: #1e3a8a;    /* Professional Blue */
+  --accent: #2563eb;      /* AI Accent */
+  --light-bg: #ffffff;
+  --muted-text: #6b7280;
+  --border: #e5e7eb;
+  --success: #166534;
+  --warning: #92400e;
+  --danger: #7f1d1d;
+}
+
+/* ================================
+   CONTAINERS & CARDS
+================================ */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--border);
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1, h2, h3 {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+/* ================================
+   TEXT
+================================ */
+p {
+  color: var(--muted-text);
+  margin-bottom: 0.6rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted-text);
+  margin-bottom: 0.3rem;
+}
+
+/* ================================
+   INPUTS & TEXTAREA
+================================ */
+input,
+textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+button {
+  padding: 0.65rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background-color: #1d4ed8;
+}
+
+/* ================================
+   LOGIN PAGE
+================================ */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  width: 380px;
+}
+
+/* ================================
+   INTERVIEW PAGE
+================================ */
+.question-box {
+  background-color: #f8fafc;
+  border-left: 4px solid var(--accent);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+/* ================================
+   DASHBOARD
+================================ */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.metric {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+}
+
+.metric h3 {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.metric p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ================================
+   STATUS BADGES
+================================ */
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: var(--success);
+}
+
+.badge-warning {
+  background-color: #fef3c7;
+  color: var(--warning);
+}
+
+.badge-danger {
+  background-color: #fee2e2;
+  color: var(--danger);
+}
+
+/* ================================
+   FOOTER / SMALL TEXT
+================================ */
+.small-text {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  margin-top: 1rem;
+  text-align: center;
+}
