@@ -1,0 +1,13 @@
+# Node
+node_modules
+.env
+
+# Builds
+dist
+build
+
+# Uploads
+uploads
+
+# Logs
+npm-debug.log
